@@ -14,8 +14,8 @@ Skrip Python otomatisasi kontrol panel untuk modem Mifi **ZTE MF90** via HTTP AP
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com
-   cd NAMA-REPO-ANDA
+   git clone https://github.com/vpn-nusantara
+   cd ZTE-MF90
    ```
 2. Install modul dependensi:
    ```bash
