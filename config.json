@@ -1,0 +1,17 @@
+{
+  "modem_ip": "http://192.168.0.1",
+  "password": "admin",
+  "actions": {
+    "change_wifi": false,
+    "wifi_ssid": "WiFi_Baru_Anda",
+    "wifi_password": "password12345",
+    "block_mac": false,
+    "mac_to_block": "AA:BB:CC:DD:EE:FF",
+    "mac_device_name": "Perangkat_Blokir",
+    "lock_band": false,
+    "band_mode": "4G",
+    "send_sms": false,
+    "sms_target": "081234567890",
+    "sms_message": "Halo dari skrip otomatisasi GitHub ZTE MF90!"
+  }
+}
