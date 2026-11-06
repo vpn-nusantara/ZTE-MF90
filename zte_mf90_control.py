@@ -2,7 +2,7 @@ import time
 import requests
 
 # Konfigurasi Modem (Sesuaikan jika IP atau password Anda berbeda)
-BASE_URL = "http://192.168.1.1" 
+BASE_URL = "http://192.168.0.1" 
 PASSWORD = "admin"  # Password default WebUI ZTE MF90
 
 session = requests.Session()
