@@ -1,28 +1,43 @@
-# ZTE MF90 Advanced API Controller
+# ZTE MF90 Modem Manager (CLI)
 
-Skrip Python otomatisasi kontrol panel untuk modem Mifi **ZTE MF90** via HTTP API. Memungkinkan eksekusi konfigurasi cepat tanpa perlu membuka Web UI browser.
+Script Python berbasis Command Line Interface (CLI) untuk mengelola pengaturan dan melihat informasi pada modem **ZTE MF90** melalui koneksi lokal WebUI.
 
-## 🚀 Fitur Utama
-- **Autentikasi Otomatis:** Enkripsi password menggunakan struktur Base64 bawaan pabrik.
-- **Setelan Wi-Fi:** Mengubah SSID dan password jaringan secara langsung.
-- **Blokir IP/Perangkat:** Memutus akses internet client penyusup menggunakan fitur MAC Address Blacklist.
-- **Lock Band:** Mengunci frekuensi jaringan ke spesifik mode (`4G Only`, `3G Only`, `2G`, atau `AUTO`).
-- **Kirim SMS:** Mengirim pesan singkat langsung dari nomor SIM card modem.
-- **Informasi Jaringan & Kuota:** Menampilkan info live bandwidth, sinyal bar, status IP WAN, serta nama provider telekomunikasi.
+## ✨ Fitur
+*   **Pengaturan WiFi:** Mengubah SSID (Nama WiFi) dan Password.
+*   **Lock Band:** Mengunci mode jaringan ke *Auto*, *4G LTE Only*, atau *3G WCDMA Only*.
+*   **Kotak Masuk SMS:** Membaca pesan masuk terbaru langsung dari modem.
+*   **Informasi Jaringan:** Memantau tipe sinyal, provider, kekuatan sinyal (RSSI/RSRP), dan IP WAN.
+*   **Informasi Baterai:** Mengecek persentase baterai serta status pengisian daya (*charging/discharging*).
+*   **Block IP / MAC:** Melihat daftar perangkat aktif dan memblokir perangkat asing via MAC Address Filter.
 
-## 🛠️ Cara Penggunaan
+## 🛠️ Prasyarat
+*   Python 3.x telah terinstal di komputer.
+*   Komputer terhubung ke jaringan modem ZTE MF90 (via WiFi atau kabel USB).
+*   IP default modem berada di **`192.168.0.1`**.
 
-1. Clone repositori ini:
-   ```bash
-   git clone https://github.com/vpn-nusantara/ZTE-MF90.git
-   cd ZTE-MF90
-   ```
-2. Install modul dependensi:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Sesuaikan setelan modem serta aksi yang ingin dijalankan di file `config.json` (ubah nilai `false` menjadi `true` pada fitur yang ingin dieksekusi otomatis).
-4. Jalankan skrip:
-   ```bash
-   python zte_mf90_control.py
-   ```
+## 🚀 Cara Penggunaan
+
+1.  **Clone Repositori ini:**
+    ```bash
+    git clone https://github.com
+    cd NAMA_REPO_ANDA
+    ```
+
+2.  **Instal Dependensi:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Jalankan Script:**
+    ```bash
+    python zte_mf90_manager.py
+    ```
+
+## ⚙️ Konfigurasi Kustom
+Jika password WebUI modem Anda bukan default (`admin`), buka file `zte_mf90_manager.py` dan ubah variabel berikut pada baris teratas:
+```python
+PASSWORD = "password_baru_anda"
+```
+
+## 📝 Catatan Kontribusi
+Kontribusi, perbaikan *bug*, atau penambahan fitur baru sangat dipersilakan. Silakan buka *Issue* atau kirimkan *Pull Request*.
