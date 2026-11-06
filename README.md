@@ -19,8 +19,8 @@ Script Python berbasis Command Line Interface (CLI) untuk mengelola pengaturan d
 
 1.  **Clone Repositori ini:**
     ```bash
-    git clone https://github.com
-    cd NAMA_REPO_ANDA
+    git clone https://github.com/vpn-nusantara/ZTE-MF90.git
+    cd ZTE-MF90
     ```
 
 2.  **Instal Dependensi:**
