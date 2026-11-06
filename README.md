@@ -20,7 +20,7 @@ Script otomatisasi berbasis CLI Python untuk melakukan konfigurasi, pembacaan st
 2. Unduh atau clone repositori ini:
    ```bash
    git clone https://github.com/vpn-nusantara/ZTE-MF90.git
-cd ZTE-MF90
+   cd ZTE-MF90
    ```
 3. Pasang modul dependensi `requests` menggunakan pip:
    ```bash
