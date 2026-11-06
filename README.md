@@ -30,14 +30,7 @@ Script Python berbasis Command Line Interface (CLI) untuk mengelola pengaturan d
 
 3.  **Jalankan Script:**
     ```bash
-    python zte_mf90_manager.py
+    python zte_mf90_cli.py
     ```
-
-## ⚙️ Konfigurasi Kustom
-Jika password WebUI modem Anda bukan default (`admin`), buka file `zte_mf90_manager.py` dan ubah variabel berikut pada baris teratas:
-```python
-PASSWORD = "password_baru_anda"
-```
-
 ## 📝 Catatan Kontribusi
 Kontribusi, perbaikan *bug*, atau penambahan fitur baru sangat dipersilakan. Silakan buka *Issue* atau kirimkan *Pull Request*.
